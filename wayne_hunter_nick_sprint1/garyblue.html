@@ -1,0 +1,260 @@
+<!-- Project Authors: Wayne Norman, Hunter Saunders, Nicholas Power
+     Dates: Oct. 22 - Nov. 1 2024
+     Site Description: A site for Gary Blue Diner, with a working order page. Main site design: Wayne Norman
+     Page Author: Wayne Norman
+     Page Description: This is the main page for the Gary Blue Diner site.
+      -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gary Blue</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="garyblue.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body class="open">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="garyblue.html" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link">Order Now</a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero/Welcome section starts here -->
+    <!-- Create fancy lettering for webpage -->
+    <!-- Creating a line element here as well to improve page layout. Font found from "Font Awesome", an open source library -->
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline"><span class="first-letter">W</span>elcome</h2>
+        <h1 class="headline">Gary Blue</h1>
+        <div class="headline-description">
+          <br />
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <div class="line line-right"></div>
+          </div>
+          <br />
+          <div class="single-animation">
+            <h5>Elevated Burger Experience</h5>
+            <a href="#homeview" class="btn cta-btn">Ready to Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Hero/Welcome section ends here-->
+
+    <!--Discover our story starts here-->
+    <a name="homeview"></a>
+    <section class="disccover-our-story">
+      <div class="container">
+        <div class="restaurant-info">
+          <div class="restaurant-descripton padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">D</span>iscover
+              </h2>
+              <h1 class="headline headline-dark">Our Story</h1>
+              <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+            <p>
+              Gary Blue started as a humble family diner, where Gary himself
+              flipped patties and perfected secret sauces. Nestled in a quaint
+              town, it quickly became the local hotspot for comforting classics.
+              Over the years, with a sprinkle of culinary ambition and a dash of
+              innovation, Gary Blue transformed into a gourmet haven. Today,
+              it's known for its mouthwatering burgers that blend traditional
+              flavours with a gourmet twist, all served with a side of family
+              warmth and charm. From humble beginnings to gourmet greatness,
+              Gary Blue remains a beloved community cornerstone.
+            </p>
+            <br />
+            <a href="garyblue.html" class="btn body-btn">About Us</a>
+          </div>
+          <div class="restaurant-info-img animate-right">
+            <img src="./images/burger.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Discover our story ends here-->
+
+    <!--Tasteful recipes starts here-->
+    <section class="tasteful-recipes between">
+      <div class="container">
+        <div class="global-headline">
+          <div class="animate-top">
+            <h2 class="sub-headline">
+              <span class="first-letter">T</span>asteful
+            </h2>
+          </div>
+          <div class="animate-bottom">
+            <h1 class="headline">Recipes</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Tasteful recipes ends here-->
+
+    <!--Discover our menu starts here-->
+    <section class="discover-our-menu">
+      <div class="container">
+        <div class="restaurant-info">
+          <div class="image-group padding-right animate-left">
+            <img src="./images/burger+beer.png" alt="" />
+            <img src="./images/old fashioned cocktail.png" alt="" />
+            <img src="./images/baked potato.png" alt="" />
+            <img src="./images/gourmet steak.png" alt="" />
+          </div>
+          <div class="restaurant-description animate-right">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">I</span>ndulge
+              </h2>
+              <h1 class="headline headline-dark">Menu</h1>
+              <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+            <p>
+              At Gary Blue, each bite tells a story of culinary passion and
+              innovation. Our menu is a celebration of gourmet burgers crafted
+              with the freshest ingredients and a twist of creativity. From our
+              classic favorites to unique seasonal specials, every dish is
+              designed to tantalize your taste buds and keep you coming back for
+              more. Dive into our recipes and discover the flavors that make
+              Gary Blue a beloved gourmet haven.
+            </p>
+            <br />
+            <a href="menu.html" class="btn body-btn">View the full Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Discover our menu ends here-->
+
+    <!-- Place and order starts here -->
+    <section class="culinary-delight">
+      <div class="container">
+        <div class="restaurant-info">
+          <div class="restaurant-descripton padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">G</span>et
+                <span class="first-letter">S</span>tarted
+              </h2>
+              <h1 class="headline headline-dark">Crave & Click</h1>
+              <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+            <p>
+              Satisfy your cravings with a gourmet experience like no other. At
+              Gary Blue, our burgers are crafted to perfection with fresh,
+              premium ingredients. Each bite is a symphony of flavor, waiting to
+              delight your taste buds. Don’t wait—click ‘Order Now’ and savor
+              the extraordinary today!
+            </p>
+            <br />
+            <a href="orders.html" class="btn body-btn">Order Now</a>
+          </div>
+          <div class="image-group">
+            <img class="animate-top" src="./images/reserved table.png" alt="" />
+            <img class="animate-bottom" src="./images/Medallion.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Place an order ends here -->
+
+    <!-- Footer section starts here -->
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#hero"> <i class="fas fa-chevron-up"></i> </a>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-about animate-top">
+            <h4>About Gary Blue</h4>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <p>
+              Gary Blue is a 5-star diner owned and operated by Gary Blue. Known
+              for its mouthwatering burgers that blend traditional flavors with
+              a gourmet twist, all served with a side of family warmth and
+              charm. From humble beginnings to gourmet greatness, Gary Blue
+              remains a beloved community cornerstone.
+            </p>
+          </div>
+          <div class="content-divider animate-bottom">
+            <div class="social-media">
+              <h4>Follow Along</h4>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+            <br /><br />
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <br /><br />
+              <p>123 Burger Lane, Flavor Town</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+          </div>
+          <div class="footer-reviews">
+            <h4>Customer Reviews</h4>
+            <br /><br />
+            <div class="review-container">
+              <div class="review-box">
+                <p>⭐⭐⭐⭐⭐ <br /><br />"Best burgers in town! - Jane D."</p>
+              </div>
+              <div class="review-box">
+                <p>
+                  ⭐⭐⭐⭐⭐ <br /><br />"An unforgettable gourmet experience! -
+                  John S."
+                </p>
+              </div>
+              <div class="review-box">
+                <p>
+                  ⭐⭐⭐⭐⭐ <br /><br />"A must-visit for burger lovers. -
+                  Sarah M."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end here -->
+
+    <script src="garyblue.js"></script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+<!-- Project Authors: Wayne Norman, Hunter Saunders, Nicholas Power
+     Dates: Oct. 22 - Nov. 1 2024
+     Site Description: A site for Gary Blue Diner, with a working order page. Main site design: Wayne Norman
+     Page Author: Nicholas Power
+     Page Description: This page is the order page for Gary Blue Diner. It allows users to select items from the menu and input their information to place an order. -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gary Blue Orders</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="garyblue.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body class="open">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="garyblue.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="orders.html" class="nav-link active">Order Now</a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section starts here -->
+
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="sub-headline"><span class="first-letter">W</span>elcome</h2>
+        <h1 class="headline">Gary Blue</h1>
+        <div class="headline-description">
+          <br />
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <div class="line line-right"></div>
+          </div>
+          <br />
+          <div class="single-animation">
+            <h5>Elevated Burger Experience</h5>
+            <a href="#Menu" class="btn cta-btn">Ready to Order?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Create fancy lettering for webpage -->
+    <!-- Creating a line element here as well to improve page layout. Font found from "Font Awesome", an open source library -->
+
+    <section class="disccover-our-story">
+      <div class="container">
+        <div class="restaurant-info">
+          <div class="restaurant-descripton padding-right animate-left">
+            <div class="global-headline">
+              <h2 class="sub-headline">
+                <span class="first-letter">O</span>nline
+              </h2>
+              <h1 class="headline headline-dark">Ordering</h1>
+              <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+
+            <a name="Menu"></a>
+            <section class="shop-container">
+              <p>
+                Please note: All orders include HST and a $5.00 delivery fee.<br />ID
+                required upon delivery for drinks.
+              </p>
+              <br />
+              <p class="ordertxt">Appetizers</p>
+              <br />
+
+              <div class="food-item">
+                <span class="food-name">Seasoned Taters</span>
+                <div class="food-right">
+                  <span class="food-price">$5.99</span>
+                  <input
+                    type="number"
+                    id="tatersQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Pork Belly Bites</span>
+                <div class="food-right">
+                  <span class="food-price">$5.50</span>
+                  <input
+                    type="number"
+                    id="porkBitesQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+
+              <div class="food-item">
+                <span class="food-name">Nachos</span>
+                <div class="food-right">
+                  <span class="food-price">$7.50</span>
+                  <input
+                    type="number"
+                    id="nachosQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Spinach Dip</span>
+                <div class="food-right">
+                  <span class="food-price">$4.99</span>
+                  <input
+                    type="number"
+                    id="dipQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+
+              <br />
+              <p class="ordertxt">Mains</p>
+              <br />
+
+              <div class="food-item">
+                <span class="food-name">Bison Burger</span>
+                <div class="food-right">
+                  <span class="food-price">$7.99</span>
+                  <input
+                    type="number"
+                    id="bisonBurgerQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Top Sirloin Steak</span>
+                <div class="food-right">
+                  <span class="food-price">$10.99</span>
+                  <input
+                    type="number"
+                    id="steakQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Big Gary</span>
+                <div class="food-right">
+                  <span class="food-price">$7.99</span>
+                  <input
+                    type="number"
+                    id="bigGaryQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Portobello Mushroom Burger</span>
+                <div class="food-right">
+                  <span class="food-price">$7.99</span>
+                  <input
+                    type="number"
+                    id="mushroomBurgerQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+
+              <br />
+              <p class="ordertxt">Sides</p>
+              <br />
+
+              <div class="food-item">
+                <span class="food-name">Mac And Cheese</span>
+                <div class="food-right">
+                  <span class="food-price">$4.99</span>
+                  <input
+                    type="number"
+                    id="macCheeseQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Twice Baked Potato</span>
+                <div class="food-right">
+                  <span class="food-price">$4.99</span>
+                  <input
+                    type="number"
+                    id="bakedPotatoQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Coleslaw With Apple And Raisins</span>
+                <div class="food-right">
+                  <span class="food-price">$4.99</span>
+                  <input
+                    type="number"
+                    id="coleslawQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Garlic And Herb Grilled Asparagus</span>
+                <div class="food-right">
+                  <span class="food-price">$4.99</span>
+                  <input
+                    type="number"
+                    id="asparagusQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+
+              <br />
+              <p class="ordertxt">Dessert & Drinks</p>
+              <br />
+
+              <div class="food-item">
+                <span class="food-name">Chocolate Lava Cake</span>
+                <div class="food-right">
+                  <span class="food-price">$4.00</span>
+                  <input
+                    type="number"
+                    id="lavaCakeQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Tiramisu</span>
+                <div class="food-right">
+                  <span class="food-price">$4.00</span>
+                  <input
+                    type="number"
+                    id="tiramisuQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Maple Old Fashion</span>
+                <div class="food-right">
+                  <span class="food-price">$5.00</span>
+                  <input
+                    type="number"
+                    id="oldFashionQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Seasonal Stout</span>
+                <div class="food-right">
+                  <span class="food-price">$5.00</span>
+                  <input
+                    type="number"
+                    id="seasonalStoutQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Whiskey Sour</span>
+                <div class="food-right">
+                  <span class="food-price">$5.00</span>
+                  <input
+                    type="number"
+                    id="whiskeySourQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+              <div class="food-item">
+                <span class="food-name">Moscow Mule</span>
+                <div class="food-right">
+                  <span class="food-price">$5.00</span>
+                  <input
+                    type="number"
+                    id="moscowMuleQuantity"
+                    value="0"
+                    min="0"
+                    onchange="updateTotal()"
+                  />
+                </div>
+              </div>
+
+              <div class="checkout-form">
+                <h2 class="ordertxt">Checkout</h2>
+                <br />
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Your Address"
+                  required
+                />
+                <input
+                  type="text"
+                  id="creditCard"
+                  placeholder="Credit Card Number"
+                  required
+                />
+                <input
+                  type="number"
+                  id="tip"
+                  placeholder="Tip Amount (Optional)"
+                  min="0"
+                  step="1.00"
+                  oninput="updateTotal()"
+                />
+
+                <button onclick="setTipPercentage(10)">10%</button>
+                <button onclick="setTipPercentage(15)">15%</button>
+                <button onclick="setTipPercentage(20)">20%</button>
+
+                <p id="subtotalDisplay">Subtotal: $0.00</p>
+                <p id="totalDisplay">Total (incl. HST,delivery): $0.00</p>
+                <br />
+                <br />
+                <button onclick="submitOrder()">Submit Order</button>
+              </div>
+              <br />
+              <p id="totalPrice"></p>
+            </section>
+          </div>
+          <div class="image-group padding-right animate-right">
+            <img
+              src="./images/Medallion.png"
+              alt="Online Order"
+              class="side-image"
+            />
+            <img src="./images/old fashioned cocktail.png" alt="Old Fashion" />
+            <img src="./images/order5.jpeg" alt="Mac and Cheese" />
+            <img src="./images/gourmet steak.png" alt="Gourmet Steak" />
+            <img src="./images/order.jpeg" alt=" Order Prep" />
+            <img src="./images/order2.jpeg" alt="The Big Gary" />
+            <img src="./images/order3.jpeg" alt="Steak Diner" />
+            <img src="./images/order4.jpeg" alt="Nachos" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section starts here -->
+    <footer>
+      <div class="container">
+        <div class="back-to-top">
+          <a href="#hero"> <i class="fas fa-chevron-up"></i> </a>
+        </div>
+        <div class="footer-content">
+          <div class="footer-content-about animate-top">
+            <h4>About Gary Blue</h4>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            <p>
+              Gary Blue is a 5-star diner owned and operated by Gary Blue. Known
+              for its mouthwatering burgers that blend traditional flavors with
+              a gourmet twist, all served with a side of family warmth and
+              charm. From humble beginnings to gourmet greatness, Gary Blue
+              remains a beloved community cornerstone.
+            </p>
+          </div>
+          <div class="content-divider animate-bottom">
+            <div class="social-media">
+              <h4>Follow Along</h4>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+            <br /><br />
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <br /><br />
+              <p>123 Burger Lane, Flavor Town</p>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+          </div>
+          <div class="footer-reviews">
+            <h4>Customer Reviews</h4>
+            <br /><br />
+            <div class="review-container">
+              <div class="review-box">
+                <p>⭐⭐⭐⭐⭐ <br /><br />"Best burgers in town! - Jane D."</p>
+              </div>
+              <div class="review-box">
+                <p>
+                  ⭐⭐⭐⭐⭐ <br /><br />"An unforgettable gourmet experience! -
+                  John S."
+                </p>
+              </div>
+              <div class="review-box">
+                <p>
+                  ⭐⭐⭐⭐⭐ <br /><br />"A must-visit for burger lovers. -
+                  Sarah M."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end here -->
+
+    <script src="garyblue.js"></script>
+  </body>
+</html>
