@@ -1,0 +1,5 @@
+SD12 Sprint 1 Group 12:
+
+Wayne Norman is responsible for the overall site design, the home page, and the home page and footer in figma.
+Hunter Saunders is responsible for the menu page in html and figma.
+Nicholas Power is responsible for the order page in html and figma along with all javascript for the order page.
